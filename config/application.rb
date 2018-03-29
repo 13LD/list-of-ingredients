@@ -23,6 +23,7 @@ module ListOfIngredients
     config.load_defaults 5.2
 
     config.api_only = true
+    config.app_generators.scaffold_controller = :scaffold_controller
 
     config.middleware.use Rack::MethodOverride
     config.middleware.use ActionDispatch::Flash
