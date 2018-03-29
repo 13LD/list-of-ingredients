@@ -14,6 +14,7 @@ ActiveAdmin.register AdminUser do
   filter :current_sign_in_at
   filter :created_at
 
+
   form do |f|
     f.inputs do
       f.input :email
