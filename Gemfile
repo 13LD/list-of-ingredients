@@ -9,6 +9,15 @@ gem 'rails', '~> 5.2.0.rc1'
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
+
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 5.0'
+
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '>= 2.7.2'
+
+# Use jquery as the JavaScript library
+gem 'jquery-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -43,3 +52,22 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+
+# ActiveAdmin
+#
+gem 'devise', '> 4.x'
+gem 'activeadmin'
+gem 'inherited_resources'
+gem 'rspec-rails'
+gem 'ransack'
+gem 'kaminari'
+gem 'formtastic'
+gem 'draper'
+
+# To fix a Draper deprecation error
+gem 'activemodel-serializers-xml'
+
+# # Optional -- only if you already include these gems
+# gem 'rack-mini-profiler'
+# gem 'database_cleaner'
