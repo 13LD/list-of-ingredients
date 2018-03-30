@@ -36,6 +36,7 @@ class App extends Component {
         return drinks
             ? <Container text>
                 <Header as='h2' icon textAlign='center'>
+                  <Divider hidden />
                     <Icon name='cocktail' color='pink' circular inverted/>
                     <Header.Content>
                         List of Ingredients
