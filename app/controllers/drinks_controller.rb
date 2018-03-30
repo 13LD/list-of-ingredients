@@ -1,4 +1,4 @@
-class DrinksController < ApplicationController
+class DrinksController < ApiController
   before_action :set_drink, only: [:show, :update, :destroy]
 
   # GET /drinks
@@ -10,7 +10,9 @@ class DrinksController < ApplicationController
 
   # GET /drinks/1
   def show
-    render json: @drink
+    @drink = Drink.find(params[:id])
+    render json: @drink.to_json(:include => { :ingredients => { :only => [:id, :description] }})
+
   end
 
   # POST /drinks
